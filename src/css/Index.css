@@ -1,0 +1,96 @@
+.main {
+  color: #ffffff;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main .bg {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  background: red;
+  z-index: -1;
+}
+
+.main .bg .thing {
+  position: absolute;
+  top: 50px;
+  left: 802px;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background: #0e0e0e;
+  height: 300px;
+  width: 300px;
+  -webkit-box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+          box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+}
+
+.main .bg .sphere {
+  position: absolute;
+  top: 60vh;
+  left: 90vh;
+  background: #0e0e0e;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  -webkit-box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+          box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+}
+
+.main .bg .square {
+  position: absolute;
+  top: 500px;
+  right: 100px;
+  height: 150px;
+  width: 150px;
+  background: #0e0e0e;
+  -webkit-box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+          box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
+}
+
+.main .presentation {
+  width: 600px;
+  height: 80vh;
+  padding: 40px;
+  background: #0e0e0e;
+}
+
+.main .presentation h1 {
+  font-size: 100px;
+}
+
+.main .presentation p {
+  font-size: 30px;
+}
+
+.main .color {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.main .color:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  border-radius: 100%;
+}
+
+.main .color1 {
+  background: #ffffff;
+}
+
+.main .color2 {
+  background: #1c2122;
+}
+
+.main .color3 {
+  background: #ff845e;
+}
+
+.main .color4 {
+  background: #7fe266;
+}
+/*# sourceMappingURL=Index.css.map */

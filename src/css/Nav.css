@@ -1,0 +1,71 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.nav .logo {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-weight: bold;
+  padding: 40px;
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #ff845e;
+  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #ff845e;
+  background-size: 100% 100%;
+  display: inline-block;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav .logo:hover {
+  background-size: 100% 0%;
+}
+
+.nav ul {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0;
+  height: 40px;
+  margin-right: 100px;
+}
+
+.nav ul li {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 50px;
+  padding-bottom: 10px;
+}
+
+.nav ul li:hover {
+  color: #ff845e;
+  border-bottom: 2px solid #ff845e;
+  padding-bottom: 14px;
+}
+/*# sourceMappingURL=Nav.css.map */

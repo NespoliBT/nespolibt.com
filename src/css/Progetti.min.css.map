@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/Progetti.scss"
+    ],
+    "names": [],
+    "file": "Progetti.min.css"
+}
