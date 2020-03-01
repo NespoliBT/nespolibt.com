@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Nav.min.css";
 
 function Index() {
   return (
     <div className="nav">
-      <a href="#" className="logo">
-        NespoliBT.com
-      </a>
+      <div className="logo">
+        <Link to="/">NespoliBT.com</Link>
+      </div>
       <ul>
-        <a href="#">
+        <Link to="/">
           <li>Blog</li>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/">
           <li>Progetti</li>
-        </a>
-        <a href="#">
+        </Link>
+        <Link to="/">
           <li>Portfolio</li>
-        </a>
+        </Link>
       </ul>
     </div>
   );

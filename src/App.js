@@ -7,15 +7,24 @@ import Blog from "./views/Blog";
 import Nav from "./views/Nav";
 
 function App() {
+  const bg = require("./assets/sfondo.png");
+  const appStyle = {
+    height: "100%",
+    backgroundImage: `url(${bg})`,
+    backgroundSize: "cover"
+  };
+
   return (
-    <Router>
-      <Nav />
-      <Switch>
-        <Route path="/" exact component={Index} />
-        <Route path="/progetti" exact component={Progetti} />
-        <Route path="/blog" exact component={Blog} />
-      </Switch>
-    </Router>
+    <div style={appStyle}>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Index} />
+          <Route path="/progetti" exact component={Progetti} />
+          <Route path="/blog" exact component={Blog} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

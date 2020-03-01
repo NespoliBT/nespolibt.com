@@ -4,49 +4,10 @@
   color: $color1;
   margin: 0 auto;
   width: 90%;
-  .bg {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    right: 0px;
-    background: red;
-    z-index: -1;
-    .thing {
-      position: absolute;
-      top: 50px;
-      left: 802px;
-      border-top-left-radius: 100%;
-      border-bottom-right-radius: 100%;
-      background: #0e0e0e;
-      height: 300px;
-      width: 300px;
-      box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
-    }
-    .sphere {
-      position: absolute;
-      top: 60vh;
-      left: 90vh;
-      background: #0e0e0e;
-      height: 200px;
-      width: 200px;
-      border-radius: 100%;
-      box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
-    }
-    .square {
-      position: absolute;
-      top: 500px;
-      right: 100px;
-      height: 150px;
-      width: 150px;
-      background: #0e0e0e;
-      box-shadow: 6px 6px 12px #000000, -6px -6px 12px #1a1a1a;
-    }
-  }
   .presentation {
     width: 600px;
     height: 80vh;
     padding: 40px;
-    background: #0e0e0e;
     h1 {
       font-size: 100px;
     }
@@ -54,26 +15,22 @@
       font-size: 30px;
     }
   }
-  .color {
-    transition: 0.2s ease-in-out;
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-    &:hover {
-      transform: scale(1.3);
-      border-radius: 100%;
-    }
-  }
-  .color1 {
-    background: $color1;
-  }
-  .color2 {
-    background: $color2;
-  }
-  .color3 {
-    background: $color3;
-  }
-  .color4 {
-    background: $color4;
+  .io {
+    position: absolute;
+    width: 45%;
+    top: 100px;
+    right: 0;
+    clip-path: polygon(
+      66% 22%,
+      58% 33%,
+      78% 39%,
+      90% 70%,
+      61% 88%,
+      20% 76%,
+      10% 46%,
+      31% 33%,
+      27% 23%,
+      43% 13%
+    );
   }
 }
