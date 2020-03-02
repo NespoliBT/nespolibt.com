@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/Index.min.css";
 import io from "../assets/io.gif";
 function Index() {
@@ -10,6 +11,9 @@ function Index() {
         </h1>
         <p>Web Developer</p>
       </div>
+      <Link to="/contacts">
+        <button className="contactMe">Contact Me</button>
+      </Link>
       <img src={io} alt="io" className="io" />
     </div>
   );

@@ -3,11 +3,18 @@
 .main {
   color: $color1;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "presentation io"
+    "contactMe io";
   width: 90%;
   .presentation {
+    grid-area: presentation;
     width: 600px;
-    height: 80vh;
-    padding: 40px;
+    height: fit-content;
+    padding: 40px 0 0 40px;
     h1 {
       font-size: 100px;
     }
@@ -15,11 +22,27 @@
       font-size: 30px;
     }
   }
+  .contactMe {
+    margin: 40px;
+    grid-area: contactMe;
+    transition: 0.2s ease-in-out;
+    border: 1px solid $color1;
+    padding: 20px 40px;
+    background: none;
+    color: $color1;
+    border-radius: 1000px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    &:hover {
+      border: none;
+      background: $color4;
+      color: $color2;
+    }
+  }
   .io {
-    position: absolute;
-    width: 45%;
-    top: 100px;
-    right: 0;
+    grid-area: io;
+    width: 80%;
+    margin: 0 auto;
     clip-path: polygon(
       66% 22%,
       58% 33%,
@@ -32,5 +55,35 @@
       27% 23%,
       43% 13%
     );
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-areas:
+      "presentation"
+      "io"
+      "contactMe";
+    grid-template-columns: 1fr;
+    .presentation {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      padding: 40px;
+      h1 {
+        font-size: 70px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .io {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .contactMe {
+      width: 60%;
+      margin: 0 20% 150px 20%;
+    }
   }
 }

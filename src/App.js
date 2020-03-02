@@ -7,13 +7,19 @@ import Blog from "./views/Blog";
 import Nav from "./views/Nav";
 
 function App() {
+  let mobileMQ = window.matchMedia("(max-width: 800px)");
   const bg = require("./assets/sfondo.png");
-  const appStyle = {
-    height: "100%",
-    backgroundImage: `url(${bg})`,
-    backgroundSize: "cover"
+  let appStyle = {
+    background: "#0e0e0e"
   };
 
+  if (!mobileMQ.matches) {
+    appStyle = {
+      height: "100%",
+      backgroundImage: `url(${bg})`,
+      backgroundSize: "cover"
+    };
+  }
   return (
     <div style={appStyle}>
       <Router>

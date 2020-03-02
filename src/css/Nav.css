@@ -68,4 +68,46 @@
   border-bottom: 2px solid #ff845e;
   padding-bottom: 14px;
 }
+
+.mobileLogo {
+  display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-weight: bold;
+  padding: 40px;
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #ff845e;
+  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #ff845e;
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+.mobileLogo:hover {
+  background-size: 100% 0%;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background: #1c1c1c;
+    height: 100px;
+  }
+  .nav ul {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+  }
+  .logo {
+    display: none !important;
+  }
+  .mobileLogo {
+    display: inline-block;
+  }
+}
 /*# sourceMappingURL=Nav.css.map */

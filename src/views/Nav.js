@@ -4,21 +4,23 @@ import "../css/Nav.min.css";
 
 function Index() {
   return (
-    <div className="nav">
-      <div className="logo">
+    <div>
+      <div className="mobileLogo">
         <Link to="/">NespoliBT.com</Link>
       </div>
-      <ul>
-        <Link to="/">
-          <li>Blog</li>
-        </Link>
-        <Link to="/">
-          <li>Progetti</li>
-        </Link>
-        <Link to="/">
-          <li>Portfolio</li>
-        </Link>
-      </ul>
+      <div className="nav">
+        <div className="logo">
+          <Link to="/">NespoliBT.com</Link>
+        </div>
+        <ul>
+          <Link to="/blog">
+            <li>Blog</li>
+          </Link>
+          <Link to="/progetti">
+            <li>Progetti</li>
+          </Link>
+        </ul>
+      </div>
     </div>
   );
 }
