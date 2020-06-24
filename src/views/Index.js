@@ -7,7 +7,7 @@ function Index() {
     <div className="main">
       <div className="presentation">
         <h1>
-          Nespoli <br /> Davide
+          Nespoli <br /> Dvid
         </h1>
         <p>Web Developer</p>
       </div>
