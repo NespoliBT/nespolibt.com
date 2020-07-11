@@ -7,7 +7,7 @@
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-      grid-template-areas: "presentation io" "contactMe io";
+      grid-template-areas: "presentation io" "contactMe io";
   width: 90%;
 }
 
@@ -49,7 +49,7 @@
 .main .contactMe:hover {
   border: none;
   background: #7fe266;
-  color: #1c2122;
+  color: #131313;
 }
 
 .main .io {
@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 800px) {
   .main {
-        grid-template-areas: "presentation" "io" "contactMe";
+        grid-template-areas: "presentation" "io" "contactMe";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

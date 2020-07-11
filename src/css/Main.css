@@ -27,4 +27,10 @@ body,
 body {
   background: #0e0e0e;
 }
+
+@media screen and (max-width: 800px) {
+  #root {
+    margin-bottom: 120px;
+  }
+}
 /*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,29 @@
+@import "./Variables";
+
+.contacts {
+  padding: 50px;
+  margin: 20px 50px;
+  color: white;
+  background: $color2;
+  border: 4px solid white;
+  border-radius: 8px;
+  width: 30%;
+  min-height: 500px;
+  p {
+    font-size: 25px;
+    .contactContainer {
+      display: inline-flex;
+      justify-content: center;
+      a {
+        transition: 0.2s ease-in-out;
+        margin-left: 20px;
+        &:hover {
+          color: $color3;
+          border-bottom: 2px solid $color3;
+          padding-bottom: 10px;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}

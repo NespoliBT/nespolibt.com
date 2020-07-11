@@ -18,8 +18,8 @@
   font-weight: bold;
   padding: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #ff845e;
-  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #ff845e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #8356ff;
+  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #8356ff;
   background-size: 100% 100%;
   display: inline-block;
   background-clip: text;
@@ -64,8 +64,8 @@
 }
 
 .nav ul li:hover {
-  color: #ff845e;
-  border-bottom: 2px solid #ff845e;
+  color: #8356ff;
+  border-bottom: 2px solid #8356ff;
   padding-bottom: 14px;
 }
 
@@ -76,8 +76,8 @@
   font-weight: bold;
   padding: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #ff845e;
-  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #ff845e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #8356ff;
+  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #8356ff;
   background-size: 100% 100%;
   background-clip: text;
   color: transparent;
