@@ -11,9 +11,11 @@ function Index() {
         </h1>
         <p>Web Developer</p>
       </div>
-      <Link to="/contacts">
-        <button className="contactMe">Contact Me</button>
-      </Link>
+      <div>
+        <Link to="/contacts">
+          <button className="contactMe">Contact Me</button>
+        </Link>
+      </div>
       <img src={io} alt="io" className="io" />
     </div>
   );

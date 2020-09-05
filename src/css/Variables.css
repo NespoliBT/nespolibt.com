@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=Variables.css.map */
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url("../fonts/Overpass-Regular.ttf");
+}
+/*# sourceMappingURL=Variables.css.map */

@@ -1,8 +1,19 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url("../fonts/Overpass-Regular.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #ffffff;
 }
 
 a {

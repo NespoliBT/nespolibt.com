@@ -1,0 +1,14 @@
+@import "./Variables.sass";
+
+.projects {
+  h1 {
+    font-size: 75px;
+    text-align: center;
+  }
+  .projectsContainer {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+  }
+}

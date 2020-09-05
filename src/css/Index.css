@@ -1,5 +1,14 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url("../fonts/Overpass-Regular.ttf");
+}
+
 .main {
-  color: #ffffff;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -40,10 +49,10 @@
   border: 1px solid #ffffff;
   padding: 20px 40px;
   background: none;
-  color: #ffffff;
   border-radius: 1000px;
   margin-top: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main .contactMe:hover {

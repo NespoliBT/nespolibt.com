@@ -1,0 +1,62 @@
+@import "./Variables.sass";
+
+.project {
+  margin-bottom: 50px;
+  display: flex;
+  background: $color2;
+  border-radius: 20px;
+  overflow: hidden;
+  .content {
+    padding: 30px;
+    width: 60%;
+    .title {
+      font-family: Pacifico;
+      font-size: 40px;
+      color: $color3;
+      margin-bottom: 20px;
+    }
+    .description {
+      font-family: Overpass;
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  .sidebar {
+    padding: 30px;
+    width: 40%;
+    background: $color5;
+    font-size: 30px;
+    .box {
+      background: $color2;
+      border-radius: 200px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .version {
+      .versionNumber {
+        color: $color4;
+      }
+    }
+    .techsContainer {
+      margin-bottom: 20px;
+      .techs {
+        margin: 20px 0;
+      }
+      .techImgs {
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        img {
+          max-width: 70px;
+          align-self: center;
+        }
+      }
+    }
+    .gitHub {
+      background: $color1;
+      color: $color5;
+      cursor: pointer;
+    }
+  }
+}

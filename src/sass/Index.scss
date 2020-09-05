@@ -1,7 +1,6 @@
 @import "./Variables";
 
 .main {
-  color: $color1;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,10 +28,10 @@
     border: 1px solid $color1;
     padding: 20px 40px;
     background: none;
-    color: $color1;
     border-radius: 1000px;
     margin-top: 20px;
     text-transform: uppercase;
+    cursor: pointer;
     &:hover {
       border: none;
       background: $color4;

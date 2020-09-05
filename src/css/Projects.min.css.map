@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACMA,UAAU,CAAE,WAAW,CAAE,QAAQ,CAAC,GAAG,CAAE,oCAAoC,CAC3E,UAAU,CAAE,WAAW,CAAE,QAAQ,CAAC,GAAG,CAAE,oCAAoC,CDL3E,AACE,SADO,CACP,EAAE,AAAC,CACD,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,MAAM,CACnB,AAJH,AAKE,SALO,CAKP,kBAAkB,AAAC,CACjB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CACd",
+    "sources": [
+        "../sass/Projects.scss",
+        "../sass/Variables.sass"
+    ],
+    "names": [],
+    "file": "Projects.min.css"
+}

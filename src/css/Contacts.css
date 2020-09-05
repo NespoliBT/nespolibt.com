@@ -3,17 +3,13 @@
   margin: 20px 50px;
   color: white;
   background: #131313;
-  border: 4px solid white;
-  border-radius: 8px;
+  border: 2px solid #313131;
   width: 30%;
   min-height: 500px;
-}
-
-.contacts p {
   font-size: 25px;
 }
 
-.contacts p .contactContainer {
+.contacts .contactContainer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -22,13 +18,13 @@
           justify-content: center;
 }
 
-.contacts p .contactContainer a {
+.contacts .contactContainer a {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   margin-left: 20px;
 }
 
-.contacts p .contactContainer a:hover {
+.contacts .contactContainer a:hover {
   color: #8356ff;
   border-bottom: 2px solid #8356ff;
   padding-bottom: 10px;

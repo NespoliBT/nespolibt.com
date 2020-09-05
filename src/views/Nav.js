@@ -16,8 +16,8 @@ function Index() {
           <Link to="/blog">
             <li>Blog</li>
           </Link>
-          <Link to="/progetti">
-            <li>Progetti</li>
+          <Link to="/projects">
+            <li>Projects</li>
           </Link>
         </ul>
       </div>

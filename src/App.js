@@ -5,7 +5,7 @@ import Blog from "./views/Blog";
 import Index from "./views/Index";
 import Nav from "./views/Nav";
 import Contacts from "./views/Contacts";
-import Progetti from "./views/Progetti";
+import Projects from "./views/Projects";
 
 function App() {
   let mobileMQ = window.matchMedia("(max-width: 800px)");
@@ -19,6 +19,7 @@ function App() {
       height: "100%",
       backgroundImage: `url(${bg})`,
       backgroundSize: "cover",
+      backgroundRepeat: "repeat",
     };
   }
   return (
@@ -27,7 +28,7 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Index} />
-          <Route path="/progetti" exact component={Progetti} />
+          <Route path="/projects" exact component={Projects} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/contacts" exact component={Contacts} />
         </Switch>
