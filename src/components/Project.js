@@ -1,31 +1,28 @@
 import React from "react";
 import "../css/Project.min.css";
-import html from "../assets/icons/html.png";
-import sass from "../assets/icons/sass.png";
-import react from "../assets/icons/react.png";
 
 function Project(props) {
   return (
     <div className="project">
       <div className="content">
-        <p className="title">NespoliBT.com</p>
-        <p className="description">NespoliBT.com è il mio sito web</p>
+        <p className="title">{props.title}</p>
+        <p className="description">{props.description}</p>
       </div>
       <div className="sidebar">
         <p className="version box">
-          Version: <span className="versionNumber">5.2.0</span>
+          Version: <span className="versionNumber">{props.version}</span>
         </p>
         <div className="techsContainer">
           <p className="techs">Tecnologie:</p>
           <div className="techImgs">
-            <img src={html} alt="html" />
-            <img src={sass} alt="sass" />
-            <img src={react} alt="react" />
+            {props.techs.map((tech) => (
+              <img key={tech} src={require("../assets/icons/" + tech + ".png")} alt={tech}/>
+            ))}
             {/* TODO magari al posto delle img dei mini box colorati con il nome della tech */}
           </div>
         </div>
         <a
-          href="https://github.com/NespoliBT/nespolibt.com"
+          href={props.repository}
           target="_blank"
           rel="noopener noreferrer"
         >
