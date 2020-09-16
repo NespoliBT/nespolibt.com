@@ -60,3 +60,14 @@
     }
   }
 }
+@media screen and (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+    .content {
+      width: 100%;
+    }
+    .sidebar {
+      width: 100%;
+    }
+  }
+}
