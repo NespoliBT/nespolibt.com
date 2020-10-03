@@ -13,9 +13,9 @@ function Index() {
           <Link to="/">NespoliBT.com</Link>
         </div>
         <ul>
-          <Link to="/blog">
+          {/* <Link to="/blog">
             <li>Blog</li>
-          </Link>
+          </Link> */}
           <Link to="/projects">
             <li>Projects</li>
           </Link>

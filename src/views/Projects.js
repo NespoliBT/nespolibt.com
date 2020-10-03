@@ -22,6 +22,13 @@ function Projects() {
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/TrackerBT"
         />
+        <Project
+          title="Note"
+          description="Perchè stavo usando TrackerBT per le note ma non è fatto per quello"
+          version="1.0.0"
+          techs={["html", "sass", "electron"]}
+          repository="https://github.com/NespoliBT/Note"
+        />
       </div>
     </div>
   );
