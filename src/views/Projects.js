@@ -18,7 +18,7 @@ function Projects() {
         <Project
           title="TrackerBT"
           description="Un semplice tracker di attività"
-          version="1.0.0"
+          version="1.2.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/TrackerBT"
         />
