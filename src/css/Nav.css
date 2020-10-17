@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url("../fonts/Overpass-Regular.ttf");
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,18 +18,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: #e5e5e5;
   font-size: 20px;
 }
 
 .nav .logo {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   font-weight: bold;
-  padding: 40px;
+  margin: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #8356ff;
-  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #8356ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #dd83a0;
+  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #dd83a0;
   background-size: 100% 100%;
   display: inline-block;
   background-clip: text;
@@ -64,8 +74,8 @@
 }
 
 .nav ul li:hover {
-  color: #8356ff;
-  border-bottom: 2px solid #8356ff;
+  color: #dd83a0;
+  border-bottom: 2px solid #dd83a0;
   padding-bottom: 14px;
 }
 
@@ -76,8 +86,8 @@
   font-weight: bold;
   padding: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff)) top no-repeat, #8356ff;
-  background: linear-gradient(#ffffff, #ffffff) top no-repeat, #8356ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #dd83a0;
+  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #dd83a0;
   background-size: 100% 100%;
   background-clip: text;
   color: transparent;
@@ -94,7 +104,7 @@
     right: 0;
     width: 100%;
     z-index: 999;
-    background: #1c1c1c;
+    background: #212931;
     height: 100px;
   }
   .nav ul {

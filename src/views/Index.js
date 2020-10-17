@@ -16,7 +16,7 @@ function Index() {
           <button className="contactMe">Contact Me</button>
         </Link>
       </div>
-      <img src={io} alt="io" className="io" />
+      <img className="io" />
     </div>
   );
 }

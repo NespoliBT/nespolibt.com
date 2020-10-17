@@ -46,19 +46,20 @@
   grid-area: contactMe;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  border: 1px solid #ffffff;
+  border: 1px solid #85ba86;
   padding: 20px 40px;
   background: none;
   border-radius: 1000px;
   margin-top: 20px;
   text-transform: uppercase;
   cursor: pointer;
+  background: #1b2128;
 }
 
 .main .contactMe:hover {
   border: none;
-  background: #7fe266;
-  color: #131313;
+  background: #85ba86;
+  color: #1b2128;
 }
 
 .main .io {

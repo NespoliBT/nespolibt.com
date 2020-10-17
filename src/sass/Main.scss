@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: $color1;
+  color: $color_1;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 }
 
 ::selection {
-  background: $color1;
+  background: $color_1;
 }
 
 html,
@@ -22,7 +22,12 @@ body,
   height: 100%;
 }
 body {
-  background: #0e0e0e;
+  background: $color_2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media screen and (max-width: 800px) {

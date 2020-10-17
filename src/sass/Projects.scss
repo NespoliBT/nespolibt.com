@@ -1,14 +1,101 @@
 @import "./Variables.sass";
 
 .projects {
-  h1 {
-    font-size: 75px;
-    text-align: center;
-  }
   .projectsContainer {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     padding: 30px;
+    .project {
+      display: flex;
+      margin-bottom: 150px;
+
+      .sidebar {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .projectImg {
+          width: 80%;
+          border-radius: 10px;
+        }
+      }
+
+      .content {
+        width: 50%;
+        .title {
+          font-family: Pacifico;
+          font-size: 70px;
+          color: $color_4;
+        }
+        .description {
+          margin-top: 20px;
+          margin-bottom: 50px;
+          font-size: 20px;
+        }
+
+        .box {
+          background: $color_3;
+          padding: 20px;
+          margin: 20px;
+          font-size: 30px;
+          border-radius: 10px;
+          display: inline;
+        }
+
+        .version {
+          .versionNumber {
+            color: $color_5;
+          }
+        }
+
+        .gitHub {
+          transition: 0.2s;
+          &:hover {
+            color: $color_4;
+          }
+        }
+
+        .techsContainer {
+          margin-top: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          .tech {
+            padding: 10px 30px;
+            text-transform: uppercase;
+            border-radius: 100px;
+            margin: 0 10px;
+          }
+          .html {
+            background: #e44d26;
+            color: $color_1;
+          }
+          .sass {
+            background: #c76494;
+            color: $color_1;
+          }
+          .react {
+            background: #222222;
+            color: #61dafb;
+          }
+          .electron {
+            background: #272a37;
+            color: #a0ebf9;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .project {
+    flex-direction: column;
+    .content {
+      width: 100%;
+    }
+    .sidebar {
+      width: 100%;
+    }
   }
 }

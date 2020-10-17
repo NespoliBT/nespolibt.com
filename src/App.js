@@ -8,22 +8,8 @@ import Contacts from "./views/Contacts";
 import Projects from "./views/Projects";
 
 function App() {
-  let mobileMQ = window.matchMedia("(max-width: 800px)");
-  const bg = require("./assets/sfondo.png");
-  let appStyle = {
-    background: "#0e0e0e",
-  };
-
-  if (!mobileMQ.matches) {
-    appStyle = {
-      height: "100%",
-      backgroundImage: `url(${bg})`,
-      backgroundSize: "cover",
-      backgroundRepeat: "repeat",
-    };
-  }
   return (
-    <div style={appStyle}>
+    <div>
       <Router>
         <Nav />
         <Switch>

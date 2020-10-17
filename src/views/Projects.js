@@ -1,12 +1,12 @@
 import React from "react";
 import Project from "../components/Project";
 import "../css/Projects.min.css";
+import nespolibt from "../assets/projectImgs/nespolibt.png";
 
 function Projects() {
   //TODO Rivedere sto metodo fa cagare
   return (
     <div className="projects">
-      <h1>Projects</h1>
       <div className="projectsContainer">
         <Project
           title="NespoliBT.com"
@@ -14,6 +14,7 @@ function Projects() {
           version="5.2.0"
           techs={["html", "sass", "react"]}
           repository="https://github.com/NespoliBT/nespolibt.com"
+          projectImg={nespolibt}
         />
         <Project
           title="TrackerBT"

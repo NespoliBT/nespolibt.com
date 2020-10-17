@@ -25,17 +25,18 @@
     margin: 40px;
     grid-area: contactMe;
     transition: 0.2s ease-in-out;
-    border: 1px solid $color1;
+    border: 1px solid $color_5;
     padding: 20px 40px;
     background: none;
     border-radius: 1000px;
     margin-top: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    background: $color_2;
     &:hover {
       border: none;
-      background: $color4;
-      color: $color2;
+      background: $color_5;
+      color: $color_2;
     }
   }
   .io {
