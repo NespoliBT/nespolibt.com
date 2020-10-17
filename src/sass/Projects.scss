@@ -19,6 +19,7 @@
         .projectImg {
           width: 80%;
           border-radius: 10px;
+          border: 2px solid $color_3;
         }
       }
 
@@ -35,25 +36,29 @@
           font-size: 20px;
         }
 
-        .box {
+        .version {
           background: $color_3;
           padding: 20px;
           margin: 20px;
           font-size: 30px;
           border-radius: 10px;
           display: inline;
-        }
-
-        .version {
           .versionNumber {
             color: $color_5;
           }
         }
 
         .gitHub {
-          transition: 0.2s;
+          transition: 0.5s;
+          font-family: Iosevka;
+          padding: 20px;
+          margin: 20px;
+          font-size: 30px;
+          border-radius: 10px;
+          display: inline;
+
           &:hover {
-            color: $color_4;
+            color: $color_6;
           }
         }
 
@@ -90,12 +95,13 @@
 }
 @media screen and (max-width: 1000px) {
   .project {
-    flex-direction: column;
+    flex-direction: column-reverse;
     .content {
-      width: 100%;
+      width: 100% !important;
     }
     .sidebar {
-      width: 100%;
+      width: 100% !important;
+      margin-top: 40px;
     }
   }
 }

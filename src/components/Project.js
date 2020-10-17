@@ -12,12 +12,12 @@ function Project(props) {
       <div className="content">
         <p className="title">{props.title}</p>
         <p className="description">{props.description}</p>
-        <p className="version box">
+        <p className="version">
           Version: <span className="versionNumber">{props.version}</span>
         </p>
 
         <a href={props.repository} target="_blank" rel="noopener noreferrer">
-          <div className="gitHub box">GitHub</div>
+          <div className="gitHub"></div>
         </a>
         <div className="techsContainer">
           {props.techs.map((tech) => (

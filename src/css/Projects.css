@@ -8,6 +8,11 @@
   src: url("../fonts/Overpass-Regular.ttf");
 }
 
+@font-face {
+  font-family: Iosevka;
+  src: url("../fonts/Iosevka Nerd Font Complete.ttf");
+}
+
 .projects .projectsContainer {
   width: 90%;
   margin: 0 auto;
@@ -38,6 +43,7 @@
 .projects .projectsContainer .project .sidebar .projectImg {
   width: 80%;
   border-radius: 10px;
+  border: 2px solid #212931;
 }
 
 .projects .projectsContainer .project .content {
@@ -56,7 +62,7 @@
   font-size: 20px;
 }
 
-.projects .projectsContainer .project .content .box {
+.projects .projectsContainer .project .content .version {
   background: #212931;
   padding: 20px;
   margin: 20px;
@@ -70,12 +76,18 @@
 }
 
 .projects .projectsContainer .project .content .gitHub {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: Iosevka;
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  display: inline;
 }
 
 .projects .projectsContainer .project .content .gitHub:hover {
-  color: #b877b4;
+  color: #63aec0;
 }
 
 .projects .projectsContainer .project .content .techsContainer {
@@ -117,15 +129,16 @@
 @media screen and (max-width: 1000px) {
   .project {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .project .content {
-    width: 100%;
+    width: 100% !important;
   }
   .project .sidebar {
-    width: 100%;
+    width: 100% !important;
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

@@ -7,4 +7,9 @@
   font-family: Overpass;
   src: url("../fonts/Overpass-Regular.ttf");
 }
+
+@font-face {
+  font-family: Iosevka;
+  src: url("../fonts/Iosevka Nerd Font Complete.ttf");
+}
 /*# sourceMappingURL=Variables.css.map */
