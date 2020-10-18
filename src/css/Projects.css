@@ -24,7 +24,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 150px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  border-bottom: 2px dashed #63aec0;
 }
 
 .projects .projectsContainer .project .sidebar {
@@ -62,20 +64,29 @@
   font-size: 20px;
 }
 
-.projects .projectsContainer .project .content .version {
+.projects .projectsContainer .project .content .versionControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .projectsContainer .project .content .versionControl .version {
   background: #212931;
   padding: 20px;
   margin: 20px;
   font-size: 30px;
   border-radius: 10px;
-  display: inline;
 }
 
-.projects .projectsContainer .project .content .version .versionNumber {
+.projects .projectsContainer .project .content .versionControl .version .versionNumber {
   color: #85ba86;
 }
 
-.projects .projectsContainer .project .content .gitHub {
+.projects .projectsContainer .project .content .versionControl .gitHub {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: Iosevka;
@@ -83,11 +94,11 @@
   margin: 20px;
   font-size: 30px;
   border-radius: 10px;
-  display: inline;
 }
 
-.projects .projectsContainer .project .content .gitHub:hover {
-  color: #63aec0;
+.projects .projectsContainer .project .content .versionControl .gitHub:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .projects .projectsContainer .project .content .techsContainer {
@@ -103,7 +114,7 @@
   padding: 10px 30px;
   text-transform: uppercase;
   border-radius: 100px;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .projects .projectsContainer .project .content .techsContainer .html {
@@ -127,18 +138,27 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .project {
+  .projects .projectsContainer .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .project .content {
+  .projects .projectsContainer .project .content {
     width: 100% !important;
   }
-  .project .sidebar {
+  .projects .projectsContainer .project .content .title {
+    font-size: 50px;
+  }
+  .projects .projectsContainer .project .sidebar {
     width: 100% !important;
     margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projects .projectsContainer .project .content .title {
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

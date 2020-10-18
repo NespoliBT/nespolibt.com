@@ -8,6 +8,11 @@
   src: url("../fonts/Overpass-Regular.ttf");
 }
 
+@font-face {
+  font-family: Iosevka;
+  src: url("../fonts/Iosevka Nerd Font Complete.ttf");
+}
+
 .main {
   margin: 0 auto;
   display: -ms-grid;

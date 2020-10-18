@@ -8,6 +8,11 @@
   src: url("../fonts/Overpass-Regular.ttf");
 }
 
+@font-face {
+  font-family: Iosevka;
+  src: url("../fonts/Iosevka Nerd Font Complete.ttf");
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,8 +33,8 @@
   font-weight: bold;
   margin: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #dd83a0;
-  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #dd83a0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #e25987;
+  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #e25987;
   background-size: 100% 100%;
   display: inline-block;
   background-clip: text;
@@ -74,8 +79,8 @@
 }
 
 .nav ul li:hover {
-  color: #dd83a0;
-  border-bottom: 2px solid #dd83a0;
+  color: #e25987;
+  border-bottom: 2px solid #e25987;
   padding-bottom: 14px;
 }
 
@@ -86,8 +91,8 @@
   font-weight: bold;
   padding: 40px;
   font-size: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #dd83a0;
-  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #dd83a0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#e5e5e5)) top no-repeat, #e25987;
+  background: linear-gradient(#e5e5e5, #e5e5e5) top no-repeat, #e25987;
   background-size: 100% 100%;
   background-clip: text;
   color: transparent;

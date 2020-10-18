@@ -2,6 +2,8 @@ import React from "react";
 import Project from "../components/Project";
 import "../css/Projects.min.css";
 import nespolibt from "../assets/projectImgs/nespolibt.png";
+import trackerbt from "../assets/projectImgs/trackerbt.png";
+import note from "../assets/projectImgs/note.png";
 
 function Projects() {
   //TODO Rivedere sto metodo fa cagare
@@ -22,6 +24,7 @@ function Projects() {
           version="1.2.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/TrackerBT"
+          projectImg={trackerbt}
         />
         <Project
           title="Note"
@@ -29,6 +32,7 @@ function Projects() {
           version="1.0.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/Note"
+          projectImg={note}
         />
       </div>
     </div>
