@@ -12,7 +12,7 @@ function Projects() {
       <div className="projectsContainer">
         <Project
           title="NespoliBT.com"
-          description="NespoliBT.com è il mio sito web"
+          description="NespoliBT.com is my website/portfolio"
           version="5.2.0"
           techs={["html", "sass", "react"]}
           repository="https://github.com/NespoliBT/nespolibt.com"
@@ -20,7 +20,7 @@ function Projects() {
         />
         <Project
           title="TrackerBT"
-          description="Un semplice tracker di attività"
+          description="A simple activity tracker"
           version="1.2.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/TrackerBT"
@@ -28,7 +28,7 @@ function Projects() {
         />
         <Project
           title="Note"
-          description="Perchè stavo usando TrackerBT per le note ma non è fatto per quello"
+          description="This was created becouse I was using TrackerBT to take notes and that's not what it's supposed to be used."
           version="1.0.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/Note"
