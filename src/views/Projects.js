@@ -28,7 +28,7 @@ function Projects() {
         />
         <Project
           title="Note"
-          description="This was created becouse I was using TrackerBT to take notes and that's not how it's supposed to be used."
+          description="This was created because I was using TrackerBT to take notes and that's not how it's supposed to be used."
           version="1.0.0"
           techs={["html", "sass", "electron"]}
           repository="https://github.com/NespoliBT/Note"
