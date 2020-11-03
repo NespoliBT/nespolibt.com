@@ -73,9 +73,7 @@
   -ms-grid-column: 2;
   grid-area: io;
   width: 80%;
-  margin: 0 auto;
-  -webkit-clip-path: polygon(66% 22%, 58% 33%, 78% 39%, 90% 70%, 61% 88%, 20% 76%, 10% 46%, 31% 33%, 27% 23%, 43% 13%);
-          clip-path: polygon(66% 22%, 58% 33%, 78% 39%, 90% 70%, 61% 88%, 20% 76%, 10% 46%, 31% 33%, 27% 23%, 43% 13%);
+  margin: 50px auto 0 auto;
 }
 
 @media screen and (max-width: 800px) {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Index.min.css";
-import io from "../assets/io.gif";
+import io from "../assets/io.png";
 function Index() {
   return (
     <div className="main">
@@ -16,7 +16,7 @@ function Index() {
           <button className="contactMe">Contact Me</button>
         </Link>
       </div>
-      <img className="io" />
+      <img className="io" src={io} />
     </div>
   );
 }
