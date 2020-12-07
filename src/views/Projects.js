@@ -14,15 +14,15 @@ function Projects() {
           title="NespoliBT.com"
           description="NespoliBT.com is my website/portfolio"
           version="5.3.0"
-          techs={["html", "sass", "react"]}
+          techs={["sass", "react"]}
           repository="https://github.com/NespoliBT/nespolibt.com"
           projectImg={nespolibt}
         />
         <Project
           title="TrackerBT"
           description="A simple activity tracker"
-          version="1.2.0"
-          techs={["html", "sass", "electron"]}
+          version="2.0.0"
+          techs={["html", "sass", "electron", "typescript"]}
           repository="https://github.com/NespoliBT/TrackerBT"
           projectImg={trackerbt}
         />

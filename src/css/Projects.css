@@ -137,6 +137,11 @@
   color: #a0ebf9;
 }
 
+.projects .projectsContainer .project .content .techsContainer .typescript {
+  background: #0385d2;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1000px) {
   .projects .projectsContainer .project {
     -webkit-box-orient: vertical;
