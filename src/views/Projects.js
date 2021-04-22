@@ -21,7 +21,7 @@ function Projects() {
         <Project
           title="TrackerBT"
           description="A simple activity tracker"
-          version="2.0.0"
+          version="2.1.5"
           techs={["html", "sass", "electron", "typescript"]}
           repository="https://github.com/NespoliBT/TrackerBT"
           projectImg={trackerbt}
