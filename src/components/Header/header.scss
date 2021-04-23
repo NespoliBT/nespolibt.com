@@ -1,0 +1,39 @@
+@import "../../scss/variables.scss";
+
+.header {
+  height: 150px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-size: 50px;
+    transition: 0.5s;
+    font-weight: bold;
+    margin: 40px;
+    background: linear-gradient($color_9, $color_9) top no-repeat, $color_8;
+    background-size: 100% 100%;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+
+    &:hover {
+      background-size: 100% 0%;
+    }
+  }
+
+  .menu {
+    display: flex;
+    .menuItem {
+      font-size: 20px;
+      padding: 5px 20px;
+      border-right: 3px dashed $color_7;
+      cursor: pointer;
+
+      &:last-of-type {
+        border: 0;
+      }
+    }
+  }
+}

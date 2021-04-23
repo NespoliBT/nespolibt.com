@@ -1,0 +1,65 @@
+@import "./animations.scss";
+
+// Varibles
+$color_1: #06090f; // $color_1: #1b2128;
+$color_2: #0d1117; // $color_2: #212931;
+$color_3: #dd83a0;
+$color_4: #63aec0;
+$color_5: #e25987;
+$color_6: #85ba86;
+$color_7: #b877b4;
+$color_8: #fec262;
+$color_9: #e5e5e5;
+
+:global(*) {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color_3;
+    border-radius: 20px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 2px 1px $color_4;
+  }
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 100;
+  color: $color_9;
+}
+
+:global(body) {
+  background: $color_1;
+  font-family: DMSans;
+}
+
+:global(a) {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+@font-face {
+  font-family: NerdFont;
+  src: url("../fonts/NerdFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url("../fonts/Pacifico.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url("../fonts/DMSans.ttf") format("truetype");
+}

@@ -1,0 +1,86 @@
+@import "../../scss/variables.scss";
+
+.project {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 150px 0;
+
+  .info {
+    width: calc(100% - 120px);
+    transform: translateY(-75px);
+    margin-left: 75px;
+    .name {
+      color: $color_7;
+      font-size: 4.5rem;
+      font-family: Pacifico;
+    }
+    .description {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .versionControl {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+
+      .version {
+        background: $color_2;
+        padding: 20px;
+        margin: 20px;
+        font-size: 30px;
+        border-radius: 10px;
+        color: $color_6;
+
+        span {
+          color: $color_9;
+        }
+      }
+
+      .github {
+        transition: 0.2s;
+        font-family: NerdFont;
+        font-size: 90px;
+        margin: 50px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .image {
+    transition: 1s;
+    height: 400px;
+    margin-right: -120px;
+    border: 5px solid $color_4;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 black;
+
+    &:hover {
+      margin-right: -100px;
+    }
+
+    animation: wobble 6s infinite ease-in-out;
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+    .info {
+      margin-right: 75px;
+      text-align: right;
+    }
+    .image {
+      margin-left: -120px;
+      &:hover {
+        margin-left: -100px;
+      }
+    }
+    .versionControl {
+      flex-direction: row-reverse;
+    }
+  }
+}

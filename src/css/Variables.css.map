@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AASA,UAAU;EAAE,WAAW,EAAE,QAAQ;EAAC,GAAG,EAAE,oCAAoC;;;AAC3E,UAAU;EAAE,WAAW,EAAE,QAAQ;EAAC,GAAG,EAAE,oCAAoC;;;AAC3E,UAAU;EAAE,WAAW,EAAE,OAAO;EAAC,GAAG,EAAE,8CAA8C",
-    "sources": [
-        "../sass/Variables.sass"
-    ],
-    "names": [],
-    "file": "Variables.css"
-}
