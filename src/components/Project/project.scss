@@ -118,6 +118,9 @@
         width: 80%;
         margin: 0 auto;
         height: unset;
+        &:hover {
+          margin: 0 auto;
+        }
       }
     }
   }
