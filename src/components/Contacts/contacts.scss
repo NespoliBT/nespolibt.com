@@ -4,7 +4,6 @@
   margin: 50px auto;
   width: 33%;
   min-width: 400px;
-  padding: 80px 40px;
   border-radius: 10px;
 
   .title {
@@ -33,6 +32,16 @@
       font-family: NerdFont;
       font-size: 50px;
       margin-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .title {
+      margin: 10px 20px;
+    }
+
+    .contact {
+      margin: 10px 30px;
     }
   }
 }
