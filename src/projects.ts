@@ -4,14 +4,14 @@ const projects = [
     repo: "https://github.com/NespoliBT/ProjectsBT",
     techs: ["svelte", "scss", "electron", "typescript"],
     img: "projectsbt.png",
-    description: "A project managing application for the busy developer",
+    description: "A project managing application for the busy developer.",
   },
   {
     id: 2,
     repo: "https://github.com/NespoliBT/NespoliBT.com",
     techs: ["svelte", "scss", "typescript"],
-    img: "nespolibt.png",
-    description: "My portfolio/website",
+    img: "nespolibt.com.png",
+    description: "My portfolio/website.",
   },
   {
     id: 3,

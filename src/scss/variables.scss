@@ -25,8 +25,9 @@ $color_9: #e5e5e5;
     border-radius: 20px;
   }
 
-  &:focus {
-    box-shadow: 0 0 2px 1px $color_4;
+  &::selection {
+    background: $color_8;
+    color: $color_1;
   }
 
   margin: 0;
@@ -36,6 +37,10 @@ $color_9: #e5e5e5;
   box-sizing: border-box;
   font-weight: 100;
   color: $color_9;
+}
+
+:global(html) {
+  scroll-behavior: smooth;
 }
 
 :global(body) {
