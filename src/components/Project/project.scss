@@ -82,4 +82,38 @@
       flex-direction: row-reverse;
     }
   }
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+
+    .info {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+
+      .versionControl {
+        justify-content: center;
+      }
+    }
+
+    .image {
+      width: 80%;
+      margin: 0 auto;
+      height: unset;
+    }
+
+    &.reverse {
+      flex-direction: column;
+
+      .info {
+        text-align: center;
+      }
+
+      .image {
+        width: 80%;
+        margin: 0 auto;
+        height: unset;
+      }
+    }
+  }
 }

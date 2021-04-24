@@ -1,11 +1,11 @@
 @keyframes wobble {
   0% {
-    transform: translateX(-10px);
+    transform: translateX(-1%);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(1%);
   }
   100% {
-    transform: translateX(-10px);
+    transform: translateX(-1%);
   }
 }
