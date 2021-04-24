@@ -13,12 +13,13 @@
     margin-left: 75px;
     .name {
       color: $color_7;
-      font-size: 4.5rem;
+      font-size: 4.5em;
       font-family: Pacifico;
     }
     .description {
       font-size: 30px;
-      margin-top: 20px;
+      margin: 20px;
+      margin-bottom: 0px;
     }
 
     .versionControl {
@@ -43,7 +44,7 @@
         transition: 0.2s;
         font-family: NerdFont;
         font-size: 90px;
-        margin: 50px;
+        margin: 0 50px;
         &:hover {
           transform: scale(1.1);
         }
@@ -58,10 +59,6 @@
     border: 5px solid $color_4;
     border-radius: 10px;
     box-shadow: 0 0 0 0 black;
-
-    &:hover {
-      margin-right: -100px;
-    }
 
     animation: wobble 6s infinite ease-in-out;
   }
@@ -100,6 +97,10 @@
       width: 80%;
       margin: 0 auto;
       height: unset;
+
+      &:hover {
+        margin: 0 auto;
+      }
     }
 
     &.reverse {

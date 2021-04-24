@@ -8,7 +8,7 @@
   align-items: center;
 
   .title {
-    font-size: 50px;
+    font-size: 3em;
     transition: 0.5s;
     font-weight: bold;
     margin: 40px;
@@ -35,5 +35,9 @@
         border: 0;
       }
     }
+  }
+
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
   }
 }
