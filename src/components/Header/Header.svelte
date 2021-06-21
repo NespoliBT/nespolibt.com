@@ -2,7 +2,7 @@
   <div class="title">NespoliBT</div>
   <div class="menu">
     <a href="#contacts">
-      <div class="menuItem">Contatti</div>
+      <div class="menuItem">Contacts</div>
     </a>
   </div>
 </div>
