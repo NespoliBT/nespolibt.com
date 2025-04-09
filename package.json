@@ -1,36 +1,20 @@
 {
-  "name": "nespolibt.com",
-  "version": "6.0.2",
-  "license": "MIT",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
-    "validate": "svelte-check"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "@rollup/plugin-typescript": "^8.0.0",
-    "@tsconfig/svelte": "^1.0.0",
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
-    "postcss": "^8.2.12",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "sass": "^1.32.11",
-    "svelte": "^3.0.0",
-    "svelte-check": "^1.0.0",
-    "svelte-preprocess": "^4.0.0",
-    "tslib": "^2.0.0",
-    "typescript": "^4.0.0"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "sirv-cli": "^1.0.0"
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^5.20.2",
+    "svelte-check": "^4.1.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
   }
 }
