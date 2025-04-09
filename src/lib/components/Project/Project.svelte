@@ -37,7 +37,7 @@
     <a class="link" href={project.link} target="_blank">  </a>
   </div>
   <div class="right">
-    {#await import(`/src/assets/imgs/${project.img}`) then { default: src }}
+    {#await import(`@/assets/imgs/${project.img}`) then { default: src }}
       <button on:click={() => (imgOpen = !imgOpen)} class={`button ${imgOpen}`}>
         <img {src} alt={project.title} class="img" />
       </button>
