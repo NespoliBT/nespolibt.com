@@ -1,0 +1,44 @@
+@use "@/lib/scss/mixins" as *;
+
+.projects {
+    @include container(1440px, 16px);
+    gap: 128px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        @include title;
+        text-align: center;
+        margin-top: 32px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .undertale {
+        width: 64px;
+        translate: 0 -132px;
+        animation: walk 20s linear infinite;
+        position: absolute;
+        left: 0;
+        border: var(--accent) dashed 2px;
+        padding: 5px;
+    }
+}
+
+@keyframes walk {
+    0% {
+        transform: translateX(-128px);
+    }
+
+    49% {
+        transform: translateX(calc(100vw + 128px));
+    }
+
+    50% {
+        transform: translateX(calc(100vw + 128px)) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(-128px) scaleX(-1);
+    }
+}

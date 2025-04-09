@@ -1,0 +1,116 @@
+@use "sass:map";
+@use "variables" as *;
+
+
+:global(html) {
+    --background: #141414;
+    --background-alt: #1d1d1d;
+    --accent: #2da235;
+    --text: #e6e6e6;
+}
+
+:global(html[data-theme='light']) {
+    --background: #ffffff;
+    --background-alt: #e6e6e6;
+    --accent: #2da235;
+    --text: #424242;
+}
+
+:global(*) {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+:global(:root) {
+    font-size: 16px;
+
+    @media screen and (max-width: map.get($breakpoints, xl)) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: map.get($breakpoints, lg)) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: map.get($breakpoints, md)) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: map.get($breakpoints, sm)) {
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: map.get($breakpoints, xs)) {
+        font-size: 8px;
+    }
+}
+
+:global(body) {
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+:global(*) {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 20px;
+    }
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    font-family: "DMSans",
+    sans-serif;
+
+    &::selection {
+        background: var(--accent);
+        color: var(--background);
+    }
+}
+
+:global(a) {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'DMSans';
+    src: url("@/assets/fonts/DMSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url("@/assets/fonts/Pacifico.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NerdFont';
+    src: url("@/assets/fonts/NerdFont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: url("@/assets/fonts/Silkscreen-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Silkscreen';
+    src: url("@/assets/fonts/Silkscreen-Bold.ttf") format("truetype");
+    font-weight: bold;
+}

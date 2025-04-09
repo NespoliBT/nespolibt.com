@@ -1,0 +1,7 @@
+@use "@/lib/scss/variables" as *;
+@use "@/lib/scss/mixins" as *;
+
+.main {
+    background-color: var(--background);
+    padding: 32px;
+}

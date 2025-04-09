@@ -1,0 +1,153 @@
+@use "@/lib/scss/mixins" as *;
+@use "@/lib/scss/variables" as *;
+@use "sass:map";
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    position: relative;
+
+    @media screen and (max-width: map.get($breakpoints, xl)) {
+        flex-direction: column;
+    }
+
+    .line {
+        position: absolute;
+        top: -64px;
+        left: calc(25%);
+        width: 50%;
+        height: 4px;
+        background-color: var(--accent);
+        border-radius: 8px;
+        opacity: 0.5;
+    }
+
+    .left {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+
+        .link {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            transition: .2s;
+            @include icon;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .title {
+            @include title(3rem);
+            max-width: 70%;
+        }
+
+        .description {
+            @include textMedium;
+        }
+
+        .demo,
+        .external {
+            @include textMedium;
+            font-weight: bolder;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background-color: var(--background-alt);
+            box-shadow: 0 0 10px var(--shadow);
+            transition: .2s ease-in-out;
+            cursor: pointer;
+            width: fit-content;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px var(--shadow);
+            }
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+
+            .technology {
+                background-color: var(--accent);
+                padding: 8px 16px;
+                border-radius: 8px;
+                font-weight: bolder;
+                user-select: none;
+
+                &.HTML {
+                    background-color: #e54c1e;
+                }
+
+                &.CSS {
+                    background-color: #264de4;
+                }
+
+                &.SCSS {
+                    background-color: #cc6699;
+                }
+
+                &.JavaScript {
+                    background-color: #f0db4f;
+                    color: black;
+                }
+
+                &.TypeScript {
+                    background-color: #007acc;
+                }
+
+                &.Svelte {
+                    background-color: #ff3e00;
+                }
+
+                &.Nix {
+                    background-color: #7e7c7c;
+                }
+
+                &.Shell {
+                    background-color: #4e5d6c;
+                }
+
+                &.zsh {
+                    background-color: #4e5d6c;
+                }
+
+                &.Linux {
+                    background-color: #f0db4f;
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+    .right {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        .button {
+            background-color: transparent;
+            position: relative;
+
+            .img {
+                transition: .2s ease-in-out;
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 0 10px var(--shadow);
+                border-radius: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use "@/lib/scss/standard.scss" as *;
+@use "@/lib/scss/mixins.scss" as *;
+
+.intro {
+    @include container(1000px, 16px);
+    position: relative;
+    margin-bottom: 64px;
+
+    .clippy {
+        width: 64px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .text {
+        @include textLarge;
+        border: 5px solid var(--accent);
+        padding: 32px;
+        border-radius: 16px;
+        background-color: var(--background-alt);
+    }
+
+    .prev,
+    .next {
+        @include textLarge;
+        font-weight: bolder;
+        color: var(--accent);
+        background-color: var(--background-alt);
+        padding: 16px 32px;
+        border-radius: 32px 16px;
+        cursor: pointer;
+        margin: 32px 16px;
+    }
+
+    .CV {
+        transition: .2s;
+        font-weight: bolder;
+        color: var(--accent);
+        background-color: var(--background-alt);
+        padding: 16px 32px;
+        border-radius: 16px;
+        cursor: pointer;
+        margin: 32px 16px;
+        width: fit-content;
+
+        a {
+            @include textLarge;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--shadow);
+        }
+    }
+}

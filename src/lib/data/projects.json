@@ -1,0 +1,61 @@
+[
+    {
+        "title": ".Dotfiles",
+        "description": "Le configurazioni per i miei ambienti di sviluppo. A volte è meglio non reinventare la ruota.",
+        "technologies": [
+            "Nix",
+            "Shell",
+            "zsh",
+            "JavaScript",
+            "Linux"
+        ],
+        "img": "dotfiles.jpg",
+        "link": "https://github.com/NespoliBT/.dotfiles"
+    },
+    {
+        "title": "Gioco della Gallina",
+        "description": "Un gioco alla parvenza piuttosto semplice. Potrebbe nascondere più di quanto l'occhio possa inizialmente vedere.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "img": "gallina.jpg",
+        "link": "https://github.com/NespoliBT/giocoGallina",
+        "linkDemo": "https://gioco-della-gallina.nespolibt.com/"
+    },
+    {
+        "title": "Sito Studenti Indipendenti Bicocca",
+        "description": "Il sito di Studenti Indipendenti Bicocca. Qui si possono trovare informazioni utili per l'università e i gruppi matricole per ogni corso.",
+        "technologies": [
+            "Svelte",
+            "SCSS",
+            "TypeScript"
+        ],
+        "img": "gruppi.jpg",
+        "link": "https://github.com/NespoliBT/sito_gruppi",
+        "externalLink": "https://gruppi-bicocca.studentimilano.org/"
+    },
+    {
+        "title": "Secret Santa",
+        "description": "Biglietto del Secret Santa per una mia amica. Che idea originale.",
+        "technologies": [
+            "Svelte",
+            "SCSS",
+            "JavaScript"
+        ],
+        "img": "secretsanta.jpg",
+        "link": "https://github.com/NespoliBT/secretSantaAlthea"
+    },
+    {
+        "title": "Capellon3 Sovversiv3",
+        "description": "La maledizione dei progetti mai finiti. Un gioco di ruolo con un misterioso twist. Così misterioso che non sono riuscito a trovarlo neanche io.",
+        "technologies": [
+            "HTML",
+            "JavaScript"
+        ],
+        "img": "capelloni.jpg",
+        "link": "https://github.com/NespoliBT/capelloon3Sovversiv3",
+        "linkDemo": "https://capelloon3-sovversiv3-nespolibt.vercel.app"
+    }
+]
