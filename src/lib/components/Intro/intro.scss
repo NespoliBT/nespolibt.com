@@ -1,20 +1,29 @@
 @use "@/lib/scss/standard.scss" as *;
 @use "@/lib/scss/mixins.scss" as *;
+@use "@/lib/scss/variables.scss" as *;
+@use "sass:map";
 
 .intro {
     @include container(1000px, 16px);
     position: relative;
     margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 
     .clippy {
         width: 64px;
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 0px;
+        right: 0px;
 
         img {
             width: 100%;
             height: auto;
+        }
+
+        @media screen and (max-width: map.get($breakpoints, sm)) {
+            position: relative;
         }
     }
 
@@ -26,16 +35,21 @@
         background-color: var(--background-alt);
     }
 
-    .prev,
-    .next {
-        @include textLarge;
-        font-weight: bolder;
-        color: var(--accent);
-        background-color: var(--background-alt);
-        padding: 16px 32px;
-        border-radius: 32px 16px;
-        cursor: pointer;
-        margin: 32px 16px;
+    .buttons {
+        display: flex;
+        gap: 32px;
+
+        .prev,
+        .next {
+            @include textLarge;
+            font-weight: bolder;
+            color: var(--accent);
+            background-color: var(--background-alt);
+            padding: 16px 32px;
+            border-radius: 32px 16px;
+            cursor: pointer;
+            width: fit-content;
+        }
     }
 
     .CV {

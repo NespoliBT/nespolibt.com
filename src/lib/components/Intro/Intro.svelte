@@ -1,5 +1,4 @@
 <script lang="ts">
-  console.log("intro");
   import clippy from "@/assets/imgs/clippy.png";
   import intro from "@/lib/data/intro.json";
   import CV from "@/assets/CV.pdf";
@@ -21,8 +20,10 @@
   <div class="clippy">
     <img src={clippy} alt="" />
   </div>
-  <button class="prev" on:click={() => updateText("prev")}>Indietro</button>
-  <button class="next" on:click={() => updateText("next")}>Avanti</button>
+  <div class="buttons">
+    <button class="prev" on:click={() => updateText("prev")}>Indietro</button>
+    <button class="next" on:click={() => updateText("next")}>Avanti</button>
+  </div>
   <div class="text">
     {@html currentText}
   </div>

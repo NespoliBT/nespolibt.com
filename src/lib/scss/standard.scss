@@ -40,11 +40,11 @@
     }
 
     @media screen and (max-width: map.get($breakpoints, sm)) {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     @media screen and (max-width: map.get($breakpoints, xs)) {
-        font-size: 8px;
+        font-size: 6px;
     }
 }
 

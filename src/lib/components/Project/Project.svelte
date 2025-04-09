@@ -9,7 +9,11 @@
     externalLink: string;
   };
 
-  let imgOpen = false;
+  function getImageUrl(name: string) {
+    return new URL(`/src/assets/imgs/${name}`, import.meta.url).href;
+  }
+
+  let url = getImageUrl(project.img);
 </script>
 
 <div class="project">
@@ -37,11 +41,9 @@
     <a class="link" href={project.link} target="_blank">  </a>
   </div>
   <div class="right">
-    {#await import(`@/assets/imgs/${project.img}`) then { default: src }}
-      <button on:click={() => (imgOpen = !imgOpen)} class={`button ${imgOpen}`}>
-        <img {src} alt={project.title} class="img" />
-      </button>
-    {/await}
+    <button class="button">
+      <img src={url} alt={project.title} class="img" />
+    </button>
   </div>
 </div>
 

@@ -32,8 +32,8 @@
 
         .link {
             position: absolute;
-            top: 32px;
-            right: 32px;
+            top: 0;
+            right: 0;
             transition: .2s;
             @include icon;
 

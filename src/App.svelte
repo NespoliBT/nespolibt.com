@@ -1,7 +1,6 @@
 <script lang="ts">
   import Intro from "./lib/components/Intro/Intro.svelte";
   import Projects from "./lib/components/Projects/Projects.svelte";
-  console.log("test");
 </script>
 
 <div class="main">
