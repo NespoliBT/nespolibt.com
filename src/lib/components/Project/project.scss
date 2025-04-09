@@ -48,7 +48,7 @@
         }
 
         .description {
-            @include textMedium;
+            @include textLarge;
         }
 
         .demo,
@@ -78,6 +78,7 @@
 
 
             .technology {
+                @include textMedium;
                 background-color: var(--accent);
                 padding: 8px 16px;
                 border-radius: 8px;
