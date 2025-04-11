@@ -2,12 +2,26 @@
   import Project from "@/lib/components/Project/Project.svelte";
   import projects from "@/lib/data/projects.json";
   import undertale from "@/assets/imgs/undertale.gif";
+
+  let jumping = false;
+
+  const jump = () => {
+    jumping = true;
+    setTimeout(() => {
+      jumping = false;
+    }, 1000);
+  };
 </script>
 
 <div class="projects">
   <div class="titleContainer">
     <div class="title">Progetti</div>
-    <img src={undertale} alt="" class="undertale" />
+    <button
+      on:click={() => jump()}
+      class={`undertaleContainer ${jumping ? "jumping" : ""}`}
+    >
+      <img src={undertale} alt="" class="undertale" />
+    </button>
   </div>
   {#each projects as project}
     <Project {project} />

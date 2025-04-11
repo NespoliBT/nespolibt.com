@@ -6,22 +6,42 @@
     display: flex;
     flex-direction: column;
 
-    .title {
-        @include title;
-        text-align: center;
-        margin-top: 32px;
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
-        z-index: 1;
-    }
 
-    .undertale {
-        width: 64px;
-        translate: 0 -132px;
-        animation: walk 20s linear infinite;
-        position: absolute;
-        left: 0;
-        border: var(--accent) dashed 2px;
-        padding: 5px;
+        .title {
+            @include title;
+            text-align: center;
+            margin-top: 32px;
+            position: relative;
+            z-index: 1;
+            width: min-content;
+            user-select: none;
+            justify-self: center;
+        }
+
+        .undertaleContainer {
+            width: 64px;
+            animation: walk 20s linear infinite;
+            position: absolute;
+            left: 0;
+            border: var(--accent) dashed 2px;
+            padding: 5px;
+            background-color: transparent;
+            bottom: 16px;
+
+            &.jumping {
+                animation: walk 20s linear infinite, jump 1s ease-in-out infinite;
+            }
+
+            .undertale {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
@@ -40,5 +60,19 @@
 
     100% {
         transform: translateX(-128px) scaleX(-1);
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 16px;
+    }
+
+    50% {
+        bottom: 64px;
+    }
+
+    100% {
+        bottom: 16px;
     }
 }
