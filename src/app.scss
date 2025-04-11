@@ -2,6 +2,82 @@
 @use "@/lib/scss/mixins" as *;
 
 .main {
+    .cubes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        &.cubes0 {
+            opacity: 0.1;
+        }
+
+        &.cubes1 {
+            opacity: 0.2;
+        }
+
+        &.cubes2 {
+            opacity: 0.4;
+        }
+
+        .cube {
+            position: absolute;
+            background-color: var(--background-alt);
+            top: 0;
+            left: 0;
+            animation: cube 20s linear infinite;
+            border-radius: 1000px;
+            box-shadow: 0 0 100px 30px var(--accent);
+        }
+    }
+
     background-color: var(--background);
     padding: 32px;
+}
+
+@keyframes cube {
+    0% {
+        opacity: 1;
+        rotate: 0deg;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    21% {
+        opacity: 0.1;
+    }
+
+    22% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0.1;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    100% {
+        top: 100vh;
+        opacity: 0;
+        rotate: 120deg;
+    }
 }

@@ -8,6 +8,10 @@
     gap: 32px;
     position: relative;
 
+    &:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+
     @media screen and (max-width: map.get($breakpoints, xl)) {
         flex-direction: column;
     }
