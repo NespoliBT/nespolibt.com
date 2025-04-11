@@ -14,6 +14,10 @@
 
     @media screen and (max-width: map.get($breakpoints, xl)) {
         flex-direction: column;
+
+        &:nth-of-type(odd) {
+            flex-direction: column;
+        }
     }
 
     .line {
