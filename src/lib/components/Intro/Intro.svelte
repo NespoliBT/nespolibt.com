@@ -6,6 +6,8 @@
   let currentText = intro[0];
 
   let currentIndex = 0;
+  let talking = false;
+
   const updateText = (where: string) => {
     if (where === "prev") {
       currentIndex = (currentIndex - 1 + intro.length) % intro.length;
@@ -13,11 +15,16 @@
       currentIndex = (currentIndex + 1) % intro.length;
     }
     currentText = intro[currentIndex];
+
+    talking = true;
+    setTimeout(() => {
+      talking = false;
+    }, 1000);
   };
 </script>
 
 <div class="intro">
-  <div class="clippy">
+  <div class={`clippy ${talking ? "talking" : ""}`}>
     <img src={clippy} alt="" />
   </div>
   <div class="buttons">

@@ -14,7 +14,7 @@
     .clippy {
         width: 64px;
         position: absolute;
-        top: 0px;
+        top: -10px;
         right: 0px;
 
         img {
@@ -24,6 +24,10 @@
 
         @media screen and (max-width: map.get($breakpoints, sm)) {
             position: relative;
+        }
+
+        &.talking {
+            animation: talk 1s ease-in-out infinite;
         }
     }
 
@@ -71,5 +75,23 @@
             transform: scale(1.05);
             box-shadow: 0 0 20px var(--shadow);
         }
+    }
+}
+
+@keyframes talk {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+
+    75% {
+        transform: translateY(-8px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
     }
 }
