@@ -1,0 +1,48 @@
+@use "@/lib/scss/mixins" as *;
+@use "@/lib/scss/variables" as *;
+@use "sass:map";
+
+.contacts {
+    position: relative;
+
+    .title {
+        @include title;
+        text-align: center;
+        margin-top: 32px;
+        position: relative;
+        z-index: 1;
+        user-select: none;
+        justify-self: center;
+        margin-bottom: 32px;
+
+        &:hover {
+            animation: .5s wiggle;
+        }
+    }
+
+    .contactsList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem;
+        justify-content: center;
+        margin-bottom: 32px;
+
+        .contact {
+            .icon {
+                @include icon;
+                font-size: 10rem;
+                transition: .2s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    #game {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+}

@@ -5,14 +5,14 @@
 :global(html) {
     --background: #141414;
     --background-alt: #1d1d1d;
-    --accent: #2da235;
+    --accent: #33FF57;
     --text: #e6e6e6;
 }
 
 :global(html[data-theme='light']) {
     --background: #ffffff;
     --background-alt: #e6e6e6;
-    --accent: #2da235;
+    --accent: #33FF57;
     --text: #424242;
 }
 
@@ -22,6 +22,7 @@
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.5;
+    transition: .5s;
 }
 
 :global(:root) {

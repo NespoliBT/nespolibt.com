@@ -1,5 +1,7 @@
 <script lang="ts">
+  import Contacts from "./lib/components/Contacts/Contacts.svelte";
   import Intro from "./lib/components/Intro/Intro.svelte";
+  import Menu from "./lib/components/Menu/Menu.svelte";
   import Projects from "./lib/components/Projects/Projects.svelte";
 
   let cubes = [];
@@ -16,6 +18,7 @@
 </script>
 
 <div class="main">
+  <Menu />
   {#each new Array(3) as _, i}
     <div class={`cubes cubes${i}`}>
       {#each cubes as cube}
@@ -34,6 +37,7 @@
   {/each}
   <Intro />
   <Projects />
+  <Contacts />
 </div>
 
 <style lang="scss">

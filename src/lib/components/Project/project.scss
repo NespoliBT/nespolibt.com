@@ -84,7 +84,6 @@
             flex-wrap: wrap;
             gap: 8px;
 
-
             .technology {
                 @include textMedium;
                 background-color: var(--accent);
@@ -136,7 +135,6 @@
                 }
             }
         }
-
     }
 
     .right {

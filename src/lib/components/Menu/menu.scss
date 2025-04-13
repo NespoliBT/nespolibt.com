@@ -1,0 +1,127 @@
+@use "@/lib/scss/standard.scss" as *;
+@use "@/lib/scss/mixins.scss" as *;
+@use "@/lib/scss/variables.scss" as *;
+@use "sass:map";
+
+.menu {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000039;
+        backdrop-filter: blur(5px);
+        z-index: 10
+    }
+
+    .toggle {
+        position: fixed;
+        top: 32px;
+        right: 32px;
+        z-index: 100;
+        width: 48px;
+        height: 32px;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.open {
+            .bar {
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                    top: 10px;
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                    bottom: 18px;
+                }
+            }
+        }
+
+        .bar {
+            background-color: var(--accent);
+            transition: .2s;
+            width: 100%;
+            height: 4px;
+            border-radius: 8px;
+            position: absolute;
+            left: 0;
+
+            &:nth-of-type(1) {
+                top: 0;
+            }
+
+            &:nth-of-type(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-of-type(3) {
+                bottom: 0;
+            }
+        }
+    }
+
+    .menuList {
+        background-color: var(--background-alt);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        margin: 32px;
+        border-radius: 16px;
+        border: 4px solid var(--accent);
+        gap: 32px;
+        padding: 32px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .menuItem {
+            transition: .2s;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+
+            &.icon {
+                @include icon;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+    }
+
+    .themeEditor {
+        position: fixed;
+        background: var(--background-alt);
+        border-radius: 16px;
+        border: 4px solid var(--accent);
+        padding: 32px;
+        z-index: 10;
+        bottom: 32px;
+        width: calc(100% - 64px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 500px;
+
+        .color {
+            width: 48px;
+            height: 48px;
+            border-radius: 16px;
+        }
+    }
+}
