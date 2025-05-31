@@ -35,7 +35,7 @@
     {@html currentText}
   </div>
   <div class="CV">
-    <a href={CV} target="_blank" class="cv">CV - 9 Aprile 2025</a>
+    <a href={CV} target="_blank" class="cv">CV - 31 Maggio 2025</a>
   </div>
 </div>
 
